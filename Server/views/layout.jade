@@ -1,7 +1,12 @@
 doctype html
-html
+html(lang='de')
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    include global-header-includes
+
+
   body
     block content
+
+    include global-js-includes
+    script(src='/javascripts/frage1/client.js')

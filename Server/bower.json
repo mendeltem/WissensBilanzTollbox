@@ -17,6 +17,7 @@
         "bootstrap": "latest",
         "normalize-css": "latest",
         "jquery": "latest",
-        "underscore": "latest"
+        "underscore": "latest",
+        "seiyria-bootstrap-slider": "latest"
     }
 }

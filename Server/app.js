@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var frage1 = require('./routes/frage1');
 
 var app = express();
 
@@ -21,10 +22,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/bower_components'));
 
 app.use('/', routes);
 app.use('/users', users);
-
+app.use('/frage1', frage1);
 
 
 
