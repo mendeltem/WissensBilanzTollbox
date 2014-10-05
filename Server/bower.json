@@ -1,0 +1,22 @@
+{
+    "name": "Server",
+    "main": "bin/www",
+    "version": "0.0.1",
+    "authors": [
+        "mendeltem@googlemail.com"
+    ],
+    "description": "\"Server\"",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "latest",
+        "normalize-css": "latest",
+        "jquery": "latest",
+        "underscore": "latest"
+    }
+}

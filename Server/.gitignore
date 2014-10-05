@@ -26,7 +26,7 @@ node_modules
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 #/*.iml
 ## Directory-based project format:
-.idea/
+#.idea/
 # if you remove the above rule, at least ignore the following:
 # User-specific stuff:
 # .idea/workspace.xml
@@ -55,3 +55,7 @@ out/
 atlassian-ide-plugin.xml
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
+
+
+#bower
+bower_components
