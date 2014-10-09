@@ -1,9 +1,31 @@
 extends layout
 
 block content
-  .jumbotron
-     h1 Wissensbilanz Tool
-     p Das ist ein Test
-     p
-         a.btn.btn-primary.btn-lg(role="button", href="/frage1") Learn more
+    .container
+        .row
+            a(href="/")
+                img(src="/images/logo2.png", height="80em", style="margin-top: 1em")
+            span.pull-right.headline
+                h1 Wissensbilanz Tool
+                p Das ist ein Test
+        .row
+            .col-lg-6
+                ul.nav.nav-pills(style="line-height:5em")
+                    li
+                        a(href="/") Startsete
+            .col-lg-6
+                include authentication
 
+        include carousel
+
+        .row
+            hr(style="border-color: #AAA -moz-use-text-color #AAA;")
+
+        .row
+            ul.nav.nav-pills
+                li
+                    a(href="/") Wissensbilanz - Made in Germany
+                li
+                    a(href="/geschaeftsbedingung") Geschäftsbedingung
+                li
+                    a(href="/impressum") Impressum
