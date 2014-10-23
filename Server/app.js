@@ -8,6 +8,11 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var frage1 = require('./routes/frage1');
+var geschaeftsmodell = require('./routes/geschaeftsmodell');
+var intellektuellesKapital = require('./routes/intellektuellesKapital');
+var register = require('./routes/register');
+var schritt_1 = require('./routes/schritt_1');
+var header = require('./routes/header');
 
 var app = express();
 
@@ -27,8 +32,20 @@ app.use(express.static(__dirname + '/bower_components'));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/frage1', frage1);
+app.use('/geschaeftsmodell', geschaeftsmodell);
+app.use('/intellektuellesKapital',intellektuellesKapital );
+app.use('/register',register);
+app.use('/schritt_1',schritt_1);
+app.use('/header',header);
 
 
+/*
+app.get("/api/sql", function(req,res){
+    var msnodesql = requie("msnodesql");
+    var connsString =
+
+});
+*/
 
 
 // catch 404 and forward to error handler
