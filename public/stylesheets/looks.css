@@ -1,0 +1,22 @@
+#textbereich{
+    margin-left:50px;
+    color:black;
+
+}
+.textfeld{
+    background-color:#ACECEC;
+    width:100%;
+    height:25%;
+}
+.textfeld_1{
+    background-color:#A9F5F2;
+    width:30%;
+    height:100%;
+    float:left;
+}
+.textfeld_2{
+    background-color:#A9F5F2;
+    width:70%;
+    height:100%;
+    float:right;
+}
